@@ -3,10 +3,10 @@ provider:
   gateway: http://127.0.0.1:8080
 
 functions:
-  of_badge_gen:
+  of-badge-gen:
     lang: go
     handler: ./of_badge_gen
-    image: s8sg/of_badge_gen
+    image: alexellis/of-badge-gen
     environment:
       content_type: "image/svg+xml"
       validate_customers: "true"
